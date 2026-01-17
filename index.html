@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Valentine ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #4a1c1c;
+      text-align: center;
+    }
+    header { padding: 60px 20px; }
+    h1 { font-size: 3.2rem; }
+    h2 { font-size: 2rem; }
+    p {
+      font-size: 1.15rem;
+      max-width: 850px;
+      margin: 0 auto 18px;
+      line-height: 1.7;
+    }
+    .glow {
+      color: #c0392b;
+      text-shadow: 0 0 5px #ffb3b3, 0 0 10px #ff8080, 0 0 20px #ff4d4d;
+      animation: pulse 2.5s infinite alternate;
+    }
+    @keyframes pulse {
+      from { text-shadow: 0 0 5px #ffb3b3, 0 0 10px #ff8080; }
+      to { text-shadow: 0 0 10px #ffcccc, 0 0 25px #ff4d4d; }
+    }
+    nav {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      margin: 8px;
+      padding: 12px 20px;
+      background: #fff;
+      color: #c0392b;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    nav a:hover { transform: scale(1.05); background: #ffe6e6; }
+    section { display: none; padding: 40px 20px; }
+    section.active { display: block; }
+    .card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 950px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .upload-box {
+      border: 2px dashed #c0392b;
+      border-radius: 15px;
+      padding: 30px;
+      margin-top: 25px;
+    }
+    footer { margin: 40px 0 20px; font-size: 0.9rem; }
+    .music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #c0392b;
+      color: #fff;
+      padding: 15px 22px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="khuda-bhi.mp3" type="audio/mpeg">
+</audio>
+<div class="music-btn" onclick="toggleMusic()">🎵 Music</div>
+
+<header>
+  <h1>Happy Valentine’s Day, <span class="glow">Jaanuuu</span> ❤️</h1>
+  <p>No matter how many miles are between us, my heart has always known where you belong — with me.</p>
+</header>
+
+<nav>
+  <a onclick="showSection('about')">About You</a>
+  <a onclick="showSection('page1')">Why I Love You</a>
+  <a onclick="showSection('page2')">Your Smile</a>
+  <a onclick="showSection('eyes')">Your Eyes</a>
+  <a onclick="showSection('page3')">Little Things</a>
+  <a onclick="showSection('distance')">Distance Means Nothing</a>
+  <a onclick="showSection('page6')">Our Future</a>
+  <a onclick="showSection('page7')">When You’re Sad</a>
+  <a onclick="showSection('page8')">When You’re Happy</a>
+  <a onclick="showSection('page9')">Forever Promise</a>
+  <a onclick="showSection('sleeping')">Sleeping on Call</a>
+</nav>
+
+<section id="about" class="active"><div class="card"><h2>About My Jaanuuu 💖</h2><p>You are my calm when everything feels loud, my comfort when days feel heavy, and my happiness even from miles away. Loving you doesn’t depend on being close — it lives in patience, trust, and choosing each other every single day.</p><p>You have this rare ability to make distance feel smaller just by existing in my life. Every message, every call, every sleepy goodnight reminds me how lucky I am to have you.</p></div></section>
+
+<section id="page1"><div class="card"><h2>Why I Love You ❤️</h2><p>I love you because you make effort. Because you stay, even when it’s hard. Because you understand me without needing explanations.</p><p>I love how you make long distance feel meaningful instead of lonely. How your voice can calm my mind. How your presence is felt even when I can’t touch you.</p></div></section>
+
+<section id="page2"><div class="card"><h2>Your Smile 😊</h2><p>Your smile is my favorite sight on video calls. It instantly lifts my mood and makes bad days feel lighter.</p><p>Even through a screen, your happiness reaches me. And every time you smile, I’m reminded why this distance is worth it.</p></div></section>
+
+<section id="eyes"><div class="card"><h2>Your Eyes 👀✨</h2><p>Your eyes are my weakness, Jaanuuu. They hold warmth, honesty, and a quiet love that makes me feel understood.</p><p>Sometimes I forget we’re far apart because when you look at me on calls, it feels real. One day, I’ll look into those eyes without a screen between us.</p></div></section>
+
+<section id="page3"><div class="card"><h2>Little Things ✨</h2><p>The good morning texts. The sleepy voices. The random calls just to hear each other breathe.</p><p>Falling asleep together on video calls, knowing we chose each other even in silence — those little moments mean more to me than grand gestures.</p></div></section>
+
+<section id="distance"><div class="card"><h2>Distance Means Nothing 🌍❤️</h2><p>Distance means nothing when two hearts refuse to drift apart. We prove every day that love doesn’t need touch to survive — it needs effort, patience, and us.</p><p>We sleep on calls. We wake up to messages. We miss each other deeply, yet love each other even deeper.</p><p><strong>Always yours,<br>Jaanemann ❤️</strong></p></div></section>
+
+<section id="page6"><div class="card"><h2>Our Future 🌸</h2><p>One day, there will be no screens between us. Just mornings together, shared silence, real cuddles, and nights where we fall asleep side by side.</p><p>Until then, we hold on — because what we’re building is worth the wait.</p></div></section>
+
+<section id="page7"><div class="card"><h2>When You’re Sad 🤍</h2><p>If I could, I’d sit beside you quietly and let you rest your head on my shoulder.</p><p>Until that day, I’ll be here — listening, reassuring, loving you from every mile away.</p></div></section>
+
+<section id="page8"><div class="card"><h2>When You’re Happy 🌈</h2><p>Your happiness is my favorite notification. Seeing you excited, laughing, and smiling on calls fills my heart.</p><p>I fall in love with you all over again every time you’re happy.</p></div></section>
+
+<section id="page9"><div class="card"><h2>Forever Promise 💍</h2><p>This distance is temporary. What I feel for you isn’t.</p><p>I promise to keep choosing you, believing in us, and loving you — no matter the miles.</p></div></section>
+
+<section id="sleeping"><div class="card"><h2>Sleeping on Call 😴❤️</h2><p>My favorite memory is us falling asleep on video calls — watching you drift off, hearing your breathing, knowing we chose to rest together.</p><p>These moments remind me that distance can’t stop love that truly wants to stay.</p><div class="upload-box"><p>Add her sleeping screenshots here</p><input type="file" accept="image/*" multiple /></div></div></section>
+
+<footer>Made with love by Jaanemann ❤️</footer>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+  let playing = false;
+  function toggleMusic() {
+    const music = document.getElementById('bgMusic');
+    playing ? music.pause() : music.play();
+    playing = !playing;
+  }
+</script>
+</body>
+</html>
