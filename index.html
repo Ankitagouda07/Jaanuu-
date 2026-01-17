@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Valentine ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #ffd1dc, #ff9a9e, #fad0c4);
+      color: #4a1c1c;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: #b11226;
+      text-shadow: 0 0 25px rgba(255,0,80,0.7);
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px rgba(255,0,80,0.4); }
+      to { text-shadow: 0 0 35px rgba(255,0,80,0.9); }
+    }
+
+    header p {
+      max-width: 900px;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 80px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      max-width: 950px;
+      background: rgba(255,255,255,0.96);
+      padding: 50px;
+      border-radius: 30px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      color: #b11226;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.9;
+    }
+
+    .music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 16px 24px;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #b11226, #ff4f70);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .hint {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="khuda-bhi.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-btn" onclick="toggleMusic()">🎵 Play Love</div>
+
+<header>
+  <h1>Happy Valentine’s Day, Jaanuuu ❤️</h1>
+  <p>
+    Distance means nothing when two hearts beat for each other.
+    Scroll slowly — every section is a piece of my heart.
+  </p>
+  <div class="hint">↓ scroll ↓</div>
+</header>
+
+<section>
+  <div class="card">
+    <h2>About You 💖</h2>
+    <p>
+      You are my calm in chaos, my comfort in silence, and my home even across miles.
+      Loving you feels natural — like breathing — and distance has only made that love stronger.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Why I Love You ❤️</h2>
+    <p>
+      I love you for the way you stay. For choosing us even when it isn’t easy.
+      You make me feel understood, accepted, and enough — exactly as I am.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Your Eyes ✨</h2>
+    <p>
+      Your eyes calm me, even through a screen. They hold warmth, honesty,
+      and a promise that one day there will be no distance between us.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>The Little Things 🌙</h2>
+    <p>
+      The sleepy video calls. Falling asleep together. The quiet moments.
+      They remind me that love doesn’t need touch to be real.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>A Blessing I Never Expected 🌸</h2>
+    <p><em>
+      Agar Main Hadh Se Guzar Jaaun Toh Mujhe Maaf Kar Dena,<br>
+      Tere Dil Mein Utar Jaaun Toh Mujhe Maaf Kar Dena...
+    </em></p>
+    <p>
+      You’ve changed how I see love — not dramatic, not loud,
+      but steady, gentle, and real. Having you is a blessing I thank life for every day.
+    </p>
+    <p style="text-align:right"><strong>— Your Jaanemann ❤️</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Sleeping On Call 😴❤️</h2>
+    <p>
+      She sleeps like a secret the night wants to keep.
+      In her dreams, the world feels softer — and I fall in love all over again.
+    </p>
+  </div>
+</section>
+
+<footer style="text-align:center;padding:40px 20px;">
+  Made with endless love ❤️
+</footer>
+
+<script>
+  let playing = false;
+  function toggleMusic() {
+    const music = document.getElementById('bgMusic');
+    if (!music) return;
+    if (!playing) { music.play(); playing = true; }
+    else { music.pause(); playing = false; }
+  }
+
+  // Midnight mode
+  const hour = new Date().getHours();
+  if (hour >= 0 && hour <= 5) {
+    document.body.style.background = 'radial-gradient(circle at top, #1a0f1f, #2b1235, #000)';
+    document.body.style.color = '#f5dce6';
+  }
+</script>
+</body>
+</html>
